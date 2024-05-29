@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <%- include('partials/header.ejs') %>
+
+
+
+    <%- include('partials/getdata.ejs') %>
+
+    <form action="/selectUpdate.ejs" method="POST">
+      name:<input type="text" name="name" />
+      <button type="submit">Get table</button>
+    </form>
+
+    <form action="/update.ejs" method="POST">
+      id:<input type="text" name="id" />
+      column name:<input type="text" name="column" />
+      Update to:<input type="text" name="updated" />
+      
+
+      <button type="submit">Get id</button>
+    </form>
+  </body>
+</html>
